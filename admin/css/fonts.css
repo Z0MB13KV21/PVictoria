@@ -1,0 +1,47 @@
+body {
+    font-family: 'Just Another Hand', cursive !important;
+    /* Fuente para el cuerpo del documento */
+}
+
+header h1, header p {
+    font-family: 'Indie Flower', cursive !important;
+    /* Fuente para el encabezado */
+}
+
+.category h2, .category p {
+    font-family: 'Kalam', cursive !important;
+    /* Fuente para categorías y descripciones */
+}
+
+.btn {
+    font-family: 'Neucha', cursive !important;
+    /* Fuente para botones */
+}
+
+footer p {
+    font-family: 'Sue Ellen Francisco', cursive !important;
+    /* Fuente para el pie de página */
+}
+:root {
+    font-size: 16px; /* Tamaño de letra base */
+}
+
+body {
+    font-size: 1.125rem; /* Tamaño de letra para el cuerpo del documento (18px) */
+}
+
+header h1, header p {
+    font-size: 2rem; /* Tamaño de letra para el encabezado (32px) */
+}
+
+.category h2, .category p {
+    font-size: 1.5rem; /* Tamaño de letra para categorías y descripciones (24px) */
+}
+
+.btn {
+    font-size: 1.25rem; /* Tamaño de letra para botones (20px) */
+}
+
+footer p {
+    font-size: 1.4rem; /* Tamaño de letra para el pie de página (16px) */
+}
