@@ -166,6 +166,193 @@ Logos: Actualizar los logos visibles en la cabecera.
 ❓ ¿Qué pasa si un producto no aparece en el catálogo?
 👉 Puede estar inactivo o oculto por decisión del administrador.
 
+
+📘 Manual de Usuario del Portal Centro Cultural Victoria
+📑 Tabla de Contenido
+
+Introducción
+
+Acceso al portal
+
+Guía para Visitantes
+
+Catálogo KV Sublimación
+
+Catálogo KV Tejido
+
+Contacto por WhatsApp y redes sociales
+
+Guía para Estudiantes
+
+Registro en el sistema
+
+Ingreso al área personal
+
+Navegación según tu especialidad
+
+Descarga de materiales (PDF con clave)
+
+Contacto y cierre de sesión
+
+Guía para Administradores
+
+Acceso al panel de control
+
+Gestión de estudiantes
+
+Gestión de productos (sublimación y tejido)
+
+Personalización del sitio (logos, fondos, redes sociales)
+
+Preguntas Frecuentes (FAQ)
+
+Consejos de uso y buenas prácticas
+
+1. Introducción
+
+El portal Centro Cultural Victoria es una plataforma en línea creada para:
+
+Visitantes: Explorar productos y conocer el trabajo del centro.
+
+Estudiantes: Acceder a un espacio privado con cursos, materiales y recursos exclusivos.
+
+Administradores: Gestionar la información, productos y usuarios del portal.
+
+Este manual tiene como objetivo ayudarte a entender cómo usar la página paso a paso, sin necesidad de conocimientos técnicos.
+
+2. Acceso al portal
+
+Ingresa desde la página principal:
+
+KV Sublimación → catálogo de productos hechos en sublimación.
+
+KV Tejido → catálogo de productos hechos en tejido (amigurumis, bordados, bolsos).
+
+Sobre nosotros → información institucional.
+
+Desde cualquier sección puedes contactar al centro por WhatsApp o redes sociales.
+
+3. Guía para Visitantes
+Catálogo KV Sublimación
+
+Presenta productos elaborados con técnicas de sublimación.
+
+Cada producto incluye: imagen, descripción, precio y características.
+
+Algunos productos están organizados en categorías (ejemplo: camisetas, tazas, cuadros).
+
+Catálogo KV Tejido
+
+Muestra trabajos artesanales como amigurumis, bolsos y bordados.
+
+Aquí encontrarás fichas de producto que incluyen imágenes y descripciones.
+
+En algunos casos, los materiales completos (PDF) están reservados para estudiantes registrados.
+
+Contacto
+
+Cada catálogo incluye botones de:
+
+WhatsApp → contacto directo con el centro.
+
+Instagram/Facebook → enlaces a redes sociales oficiales.
+
+4. Guía para Estudiantes
+Registro en el sistema
+
+Dirígete a la sección de Registro.
+
+Completa tus datos: nombre, usuario, contraseña.
+
+Introduce la clave de acceso que te haya dado tu profesor o administrador.
+
+Una vez registrado, podrás ingresar al área privada con tu usuario y contraseña.
+
+Ingreso al área personal
+
+Accede desde el botón de Login/Ingresar.
+
+Introduce tu nombre de usuario y contraseña.
+
+Serás redirigido automáticamente a tu área de estudiante.
+
+Navegación según tu especialidad
+
+Dependiendo de tu rol asignado, verás un contenido diferente:
+
+Amigurumis → cursos y patrones exclusivos de amigurumis.
+
+Bordados → materiales de bordados.
+
+Bolsos → diseños, tutoriales y recursos relacionados.
+
+Descarga de materiales
+
+Algunos recursos están en PDF protegidos con contraseña.
+
+Al lado del archivo aparecerá la clave de acceso que deberás introducir para abrir el documento.
+
+Esto asegura que solo los estudiantes registrados puedan usar el material.
+
+Contacto y cierre de sesión
+
+Dentro de tu área encontrarás un botón para escribir directamente por WhatsApp.
+
+Para cerrar sesión, haz clic en el botón de salida; esto protege tu cuenta y evita accesos no autorizados.
+
+5. Guía para Administradores
+Acceso al panel de control
+
+El acceso es privado y requiere una clave especial.
+
+Una vez dentro, tendrás un menú para gestionar estudiantes, productos y apariencia del portal.
+
+Gestión de estudiantes
+
+Agregar estudiantes: completa un formulario con sus datos y asigna un rol (ej. Amigurumis).
+
+Editar estudiantes: cambia sus datos, contraseñas o roles.
+
+Eliminar estudiantes: borra un usuario del sistema cuando ya no deba tener acceso.
+
+Gestión de productos
+
+KV Sublimación: agrega productos con nombre, categoría, material, tamaño, precio e imagen.
+
+KV Tejido: agrega productos como amigurumis, bolsos o bordados. Además de la imagen, puedes adjuntar un PDF protegido con contraseña.
+
+Personalización del sitio
+
+Desde el panel también puedes:
+
+Subir o cambiar logos, íconos y fondos de las páginas.
+
+Editar o eliminar redes sociales del centro.
+
+6. Preguntas Frecuentes (FAQ)
+
+❓ Olvidé mi contraseña, ¿qué hago?
+👉 Contacta al administrador para que la restablezca.
+
+❓ ¿Por qué necesito una clave para registrarme?
+👉 Porque cada rol tiene acceso a un área diferente del portal, según la especialidad.
+
+❓ No veo un producto en el catálogo, ¿por qué?
+👉 El administrador puede haberlo ocultado o desactivado temporalmente.
+
+❓ ¿Cómo abro un PDF protegido?
+👉 Usa la clave que aparece al lado del producto en tu área personal.
+
+7. Consejos de uso y buenas prácticas
+
+Si eres estudiante, no compartas tu clave ni tus archivos PDF.
+
+Mantén tu sesión cerrada cuando termines de usar el portal.
+
+Usa los canales de contacto oficiales (WhatsApp o redes sociales).
+
+Si eres administrador, revisa periódicamente los estudiantes activos y los productos publicados.
+
 ❓ ¿Cómo abrir un PDF con contraseña?
 👉 Descárgalo desde tu área personal y usa la clave que aparece junto al producto.
 
