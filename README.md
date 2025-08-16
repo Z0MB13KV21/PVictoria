@@ -357,3 +357,241 @@ Si eres administrador, revisa periódicamente los estudiantes activos y los prod
 👉 Descárgalo desde tu área personal y usa la clave que aparece junto al producto.
 
 📌 Con este manual, cada tipo de usuario (visitante, estudiante, administrador) tiene instrucciones claras y prácticas para navegar y usar el portal Centro Cultural Victoria.
+
+📗 Manual Técnico del Portal Centro Cultural Victoria
+📑 Tabla de Contenido
+
+Introducción
+
+Arquitectura General del Sistema
+
+Base de Datos
+
+Tablas principales
+
+Relaciones y llaves foráneas
+
+Seguridad en almacenamiento
+
+Backend (PHP)
+
+Gestión de usuarios y roles
+
+Gestión de productos (sublimación y tejido)
+
+Gestión de redes sociales y contenido visual
+
+Control de sesiones y seguridad
+
+Frontend (HTML, CSS, JS)
+
+Estructura de catálogos
+
+Área de estudiantes
+
+Panel de administración
+
+Seguridad del Sistema
+
+Cifrado de contraseñas
+
+Protección de PDFs
+
+Validaciones y restricciones
+
+Flujo de Usuario (visitante, estudiante, administrador)
+
+Requisitos del Sistema
+
+Procedimientos de Instalación y Configuración
+
+Mantenimiento y buenas prácticas
+
+1. Introducción
+
+El portal Centro Cultural Victoria es una aplicación web desarrollada en PHP, HTML, CSS y JavaScript, con una base de datos MySQL.
+El sistema se divide en tres áreas:
+
+Público (Catálogos KV Sublimación y KV Tejido)
+
+Estudiantes (contenido restringido según rol)
+
+Administración (gestión completa del portal)
+
+2. Arquitectura General del Sistema
+
+Servidor web: Apache/Nginx (con soporte para PHP 7.4+).
+
+Base de datos: MySQL/MariaDB.
+
+Lenguajes:
+
+Backend: PHP
+
+Frontend: HTML5, CSS3, JavaScript (jQuery, AJAX)
+
+Seguridad: manejo de sesiones, cifrado bcrypt, PDFs protegidos.
+
+Estructura de carpetas (resumida):
+
+/admin: Módulos de administración (estudiantes, productos, redes, apariencia).
+
+/Catalogos: Catálogos públicos de sublimación y tejido.
+
+/estudiante: Área privada con vistas específicas según el rol.
+
+/includes: Conexión a base de datos y sesiones.
+
+/secretadmin.php: acceso especial al panel oculto.
+
+3. Base de Datos
+Tablas principales:
+
+usuarios → almacena credenciales, nombre, apellido, rol.
+
+roles → define roles del sistema (admin, amigurumis, crochet, bolsos).
+
+productosub → productos de sublimación.
+
+productostej → productos de tejido, con PDF protegido.
+
+categoriassub, materialessub, tamañomaterialsub → clasificadores para sublimación.
+
+pagina, rutapagina, fondopagina, iconopagina, logopagina, redes → configuración del portal.
+
+Seguridad de la BD:
+
+Contraseñas almacenadas con bcrypt.
+
+Validaciones de duplicados (usuarios y productos).
+
+Restricciones en claves de acceso para roles.
+
+4. Backend (PHP)
+Gestión de usuarios:
+
+add_student.php: alta de estudiante, valida duplicados.
+
+edit_student.php: edición con validación de usuario único.
+
+delete_student.php: eliminación por ID.
+
+load_students.php: consulta y listado dinámico.
+
+Gestión de productos:
+
+Sublimación (productosub):
+
+CRUD completo (crear, editar, eliminar, activar/inactivar).
+
+Archivos de imagen en /Catalogos/KVS/Recursos/.
+
+Tejido (productostej):
+
+CRUD completo.
+
+Imagen + PDF protegido con contraseña generada automáticamente.
+
+Contraseñas generadas con función aleatoria de 8 caracteres.
+
+Redes sociales y contenido visual:
+
+add_social.php / edit_social.php / delete_social.php → gestión de íconos y enlaces.
+
+editar_fondo.php / editar_icono.php → personalización de apariencia.
+
+Sesiones:
+
+Archivo includes/session.php → controla acceso y protege rutas.
+
+5. Frontend (HTML, CSS, JS)
+Catálogos:
+
+KVS.php → catálogo de sublimación.
+
+KVC.php → catálogo de tejido.
+
+Funcionalidades con AJAX: carga de productos, filtros dinámicos.
+
+Área de estudiantes:
+
+Vistas personalizadas: amigurumis.php, bordados.php, bolsos.php.
+
+Descarga de PDFs con contraseña.
+
+Administración:
+
+Panel en secretadmin.php.
+
+Interfaces AJAX para CRUD en estudiantes, productos y redes.
+
+Archivos .js (ej. adminEst.js, KVC.js, KVS.js) para manipulación de datos.
+
+6. Seguridad del Sistema
+Cifrado:
+
+Contraseñas almacenadas con password_hash() usando bcrypt.
+
+Protección de PDFs:
+
+PDFs en Catalogos/KVC/{rol}/down/
+
+Cada producto tiene un campo ContraseñaPDF.
+
+Clave entregada al estudiante junto al producto.
+
+Restricciones:
+
+NC.js: bloquea clic derecho e inspección (Ctrl+Shift+I).
+
+Validaciones en formularios (servidor y cliente).
+
+7. Flujo de Usuario
+
+Visitante: ingresa a catálogos → visualiza productos → contacta por WhatsApp/redes.
+
+Estudiante: se registra → ingresa → accede a área privada → descarga materiales → cierra sesión.
+
+Administrador: accede a secretadmin.php → gestiona estudiantes/productos → personaliza sitio.
+
+8. Requisitos del Sistema
+
+Servidor: Apache/Nginx con PHP 7.4+
+
+Base de datos: MySQL 5.7+
+
+Extensiones PHP necesarias: PDO, GD, Fileinfo
+
+Cliente: Navegador actualizado con soporte JS y CSS3
+
+9. Procedimientos de Instalación
+
+Descargar el proyecto en el servidor web.
+
+Configurar el archivo /includes/db.php con credenciales de la BD.
+
+Importar el archivo pav.sql en MySQL.
+
+Configurar permisos de escritura en carpetas:
+
+/Catalogos/KVC/*/recursos/
+
+/Catalogos/KVC/*/down/
+
+/Catalogos/KVS/Recursos/
+
+Verificar rutas en archivos adminExtra.php y adminRedes.php.
+
+10. Mantenimiento y buenas prácticas
+
+Respaldar la BD periódicamente.
+
+Rotar las contraseñas de administración.
+
+Revisar logs de error de PHP.
+
+Limpiar productos inactivos y estudiantes que ya no tengan acceso.
+
+Actualizar la versión de PHP y librerías usadas (jQuery, Bootstrap).
+
+👉 Este manual técnico está pensado como guía de referencia para administradores del sistema y desarrolladores. Explica la estructura, seguridad, flujo y mantenimiento de la aplicación.
