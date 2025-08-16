@@ -1,6 +1,3 @@
-¡Claro\! Aquí tienes el contenido que proporcionaste, formateado para un `README.md` de GitHub, usando Markdown para una mejor organización y legibilidad.
-
------
 
 # Portal Centro Cultural Victoria
 
