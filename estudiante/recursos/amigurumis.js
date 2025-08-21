@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // Función para cargar productos con búsqueda y paginación
     function loadProducts(search = '', page = '', container = '#all-products-container') {
         $.ajax({

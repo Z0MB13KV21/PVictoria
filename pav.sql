@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-06-2025 a las 05:53:04
+-- Tiempo de generación: 21-08-2025 a las 05:32:03
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.3.9
 
@@ -184,10 +184,9 @@ CREATE TABLE `productostej` (
 --
 
 INSERT INTO `productostej` (`Id`, `NombreTej`, `Pagina`, `Descripcion`, `Tamaño`, `Precio`, `Galeria`, `Pdf`, `ContraseñaPDF`, `Activo`, `Mostrar`) VALUES
-(8, 'asda', 'amigurumis', 'asdasd', 'asdasd', 1231.00, 'Catalogos/KVC/amigurumis/recursos/asda-KVC.webp', 'Catalogos/KVC/amigurumis/down/asda-KVC.pdf', 'xv19aJa2', 'activo', 'mostrar'),
-(9, 'asdasd', 'bordados', 'asdasd', 'asdasd', 12.00, 'Catalogos/KVC/amigurumis/recursos/asdasd-KVC.webp', 'Catalogos/KVC/amigurumis/down/asdasd-KVC.pdf', 'f8Z4ufx5', 'activo', 'mostrar'),
-(10, 'asdaaaa', 'bolsos', 'asdas', 'asdasd', 1231.00, 'Catalogos/KVC/bordados/recursos/asdaaaa-KVC.webp', 'Catalogos/KVC/bordados/down/asdaaaa-KVC.pdf', '95pRx0aX', 'activo', 'mostrar'),
-(13, 'prueba', 'bolsos', 'asdasdasd', 'asdasdasdasd', 12312123.00, 'Catalogos/KVC/bolsos/recursos/prueba-KVC.webp', 'Catalogos/KVC/bolsos/down/prueba-KVC.pdf', '277skGbq', 'activo', 'mostrar');
+(8, 'Jirafa amigurumi', 'amigurumis', 'patron jirafa - solicitar clave acceso', '10cm', 3000.00, 'Catalogos/KVC/amigurumis/recursos/Jirafa amigurumi-KVC.png', 'Catalogos/KVC/amigurumis/down/Jirafa amigurumi-KVC.pdf', 'xv19aJa2', 'activo', 'mostrar'),
+(9, 'flores bordadas', 'bordados', 'Bordado flores', '25cmx25cm', 5000.00, 'Catalogos/KVC/bordados/recursos/flores bordadas-KVC.webp', 'Catalogos/KVC/bordados/down/flores bordadas-KVC.pdf', 'f8Z4ufx5', 'activo', 'mostrar'),
+(10, 'Bolso rosa crochet', 'bolsos', 'bolso de mega rosa crochet', 'M', 12000.00, 'Catalogos/KVC/bolsos/recursos/Bolso rosa crochet-KVC.jpg', 'Catalogos/KVC/bolsos/down/Bolso rosa crochet-KVC.pdf', '95pRx0aX', 'activo', 'mostrar');
 
 -- --------------------------------------------------------
 
@@ -213,9 +212,9 @@ CREATE TABLE `productosub` (
 --
 
 INSERT INTO `productosub` (`id`, `nombreSub`, `descripcionSub`, `precioSub`, `tamaño`, `Especificaciones`, `categoriaSub`, `materialesSub`, `Galeria`, `activo`) VALUES
-(14, 'meloow', 'asd', 123.00, 'S', 'asd', 'Llaveros', 'Vinil', 'Catalogos/KVS/Recursos/meloow-KVS.webp', 'activo'),
-(18, 'asasdasdq', 'asdsaasd', 12.00, 'S', 'asdas', 'Llaveros', 'Vinil', 'Catalogos/KVS/Recursos/asasdasdq-KVS.png', 'activo'),
-(19, 'qwerty', 'dfdfsdfsd', 34234432.00, 'S', 'ddfssdf', 'Stickers', 'Sublimable', 'Catalogos/KVS/Recursos/qwerty-KVS.jpg', 'activo');
+(14, 'Llavero Centro Cultural Victoria', 'Hermoso llavero con el logo del CCV', 2500.00, 'S', 'manualidad', 'Llaveros', 'Vinil', 'Catalogos/KVS/Recursos/Llavero Centro Cultural Victoria-KVS.jpg', 'activo'),
+(18, 'Banner Centro Cultural', 'Banner fotografia del antiguo CCV', 8000.00, 'XL', 'Insertar tamaño real', 'Textiles', 'Vinil', 'Catalogos/KVS/Recursos/Banner Centro Cultural-KVS.jpg', 'activo'),
+(19, 'Stiker dia del artista nacional', 'stiker sobre dia del artista nacional', 500.00, 'M', 'Stiker dia del artista nacional', 'Stickers', 'Vinil', 'Catalogos/KVS/Recursos/Stiker dia del artista nacional-KVS.jpg', 'activo');
 
 -- --------------------------------------------------------
 
@@ -330,9 +329,12 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellido`, `contraseña`, `rol`) VALUES
-(16, 'Patitow', 'Keisy Valeria', 'Castillo Flores', '$2y$10$5.jDw85Iw5e90tAz2qgjDuXHySuNkzU7b05m5Av4pfBllfrnX4sXC', 'bolsos'),
 (19, 'Patitowa', 'Keisy Valeria', 'Castillo Flores', '$2y$10$iWlgZ9bZLinPqdj2f7H7HudKa6qBtBrXPexdbFNZmOo6EXi4g3/Gq', 'admin'),
-(21, 'dedomalo', 'Carlos', 'ardon', '$2y$10$IOlUIxktgmg5OD.FUrYZsO1A6e6QOnPhIVV9LUEFO51IdONeO34D2', 'admin');
+(21, 'dedomalo', 'Carlos', 'ardon', '$2y$10$IOlUIxktgmg5OD.FUrYZsO1A6e6QOnPhIVV9LUEFO51IdONeO34D2', 'admin'),
+(22, 'AdminPAV', 'Administrador', 'CentroCulturalVictoria', '$2y$10$.bUzGkHggRNVveO1btN60uoE9NVQMH1d7JcLG1Sp82zJO7d1EFuhW', 'admin'),
+(23, 'EstAmigurumi', 'Estudiante', 'Amigurumi', '$2y$10$Jnny/obYOqdecmxsuC46FuhvZF1f61SIRFLTFLOOaJqp6jSxbw/bW', 'amigurumis'),
+(24, 'EstBolsos', 'Estudiante', 'Bolsos', '$2y$10$GWt3ZQbuPlqz5oY75vBATOUZVPxUaUYbjDbJq8V4T2hCRokzUFtqC', 'bolsos'),
+(25, 'EstCrochet', 'Estudiante', 'Crochet', '$2y$10$wrFL.EbVAJDFqq6iDPqw0eHqbtxm4aa5VFDEV5zJUnxgBjnvF9t9.', 'crochet');
 
 --
 -- Índices para tablas volcadas
@@ -491,7 +493,7 @@ ALTER TABLE `tamañomaterialsub`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Restricciones para tablas volcadas

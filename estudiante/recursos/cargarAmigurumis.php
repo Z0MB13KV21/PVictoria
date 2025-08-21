@@ -5,12 +5,13 @@ include '../../includes/db.php';
 // Obtener el término de búsqueda de la solicitud GET
 $search = isset($_GET['search']) ? '%' . $_GET['search'] . '%' : '';
 
-// Establecer la página por defecto a "amigurumis"
+// Establecer la página por defecto a "bolsos"
 $page = 'amigurumis';
 
 try {
     // Construir la consulta SQL para obtener productos
-    $query = "SELECT Id, NombreTej, Pagina, Descripcion, Tamaño, Precio, Galeria, Pdf, ContraseñaPDF, Mostrar FROM productostej WHERE Mostrar = 'Mostrar'";  
+    $query = "SELECT Id, NombreTej, Pagina, Descripcion, Tamaño, Precio, Galeria, Pdf, ContraseñaPDF, Mostrar FROM productostej WHERE Mostrar = 'Mostrar'";
+    
     // Agregar filtro de página
     $query .= " AND Pagina = :page";
     
@@ -59,3 +60,4 @@ function generateGaleriaPath($page, $file) {
     return "../" . $file;
 }
 ?>
+

@@ -476,7 +476,7 @@ if (isset($_SESSION['usuario'])) {
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="estudiante/recursos/amigurumis.js"></script>
+    <script src="recursos/amigurumis.js"></script>
     <script>
 
 // Función para abrir WhatsApp con un mensaje personalizado
